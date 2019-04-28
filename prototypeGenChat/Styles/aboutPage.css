@@ -1,0 +1,49 @@
+﻿/****************עמוד אודות****************/
+header {
+    background-color: rgba(0, 0, 0, 0.89) !important;
+    height: 3rem;
+}
+#mainNavBar {
+    padding: 0 15px !important;
+}
+
+#developDetails {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 25%;
+    margin-top: 2rem;
+    float: right;
+}
+
+#hadarPic {
+    margin-right: 25%;
+}
+
+#contantAbout {
+    direction: rtl;
+    clear: both;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+    #contantAbout h2 {
+        padding-top: 2rem;
+        margin: 2rem 0;
+    }
+
+#logoLinks {
+    text-align: center;
+}
+
+    #logoLinks img {
+        display: inline-block;
+        width: 15%;
+    }
+
+.copyRights {
+    margin-top: 2rem;
+}

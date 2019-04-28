@@ -1,0 +1,142 @@
+﻿/****************עמוד שיחה****************/
+body {
+    font-family: Heebo;
+    direction: rtl;
+}
+
+/*תפריט עליון קבוע*/
+header {
+    height: 100%;
+}
+
+.top-page {
+    background-color: white;
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 3px 13px #f2f2f2;
+}
+
+/*תפריט צ'אטים*/
+.chats-list-bar-header-col {
+    border-left: 1px solid #f2f2f2;
+}
+
+.chats-list-bar-header {
+    margin-top: 0.75rem;
+}
+
+    .chats-list-bar-header h2 {
+        margin: 1rem 0;
+    }
+
+.chat-list-bar-back-img {
+    width: auto;
+    height: 2rem;
+}
+
+.chats-list-bar-body {
+    padding: 0;
+    margin-top: -1px;
+}
+
+.item-active {
+    background-color: #f2f2f2;
+}
+
+.chats-list-container .list-group-item {
+    border-radius: 0;
+    padding-top: 0 !important;
+    border-color: #f2f2f2 !important;
+}
+
+.chat-list-container-bot-img {
+    width: auto;
+    height: 4rem;
+    border-radius: 6rem;
+    margin-top: 1.5rem;
+}
+
+.media-body p {
+    text-align: right;
+    margin-top: 1rem !important;
+    margin-bottom: 0;
+    padding-right: 1rem;
+    font-size: 90% !important;
+}
+
+.active-chat{
+font-style: italic;
+}
+
+.media-body h3 {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.media-body h3 {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/*חלונית שיחה*/
+.chat-head div {
+    padding: 1rem;
+}
+
+.chat-head img {
+    margin: 1rem 0;
+}
+
+#chatPage {
+    direction: rtl;
+}
+
+#contactImg {
+    border-radius: 50%;
+    width: 40%;
+}
+
+#headChat a {
+    float: right;
+}
+
+#headChat h2 {
+    text-align: right;
+}
+
+/*צ'אט*/
+button.botui-actions-buttons-button:not(:last-child) {
+    margin-left: 10px;
+    margin-right: 0 !important;
+}
+
+
+.botui-message-content.human {
+    float: left;
+    background-color: #A7B4BF;
+}
+
+.botui-message-content, .botui-message-content text, .botui-message-content.loading {
+    float: right;
+    background-color: #C9AAB5;
+}
+
+.botui-actions-buttons-button {
+    background-color: #A7B4BF;
+}
+
+.botui-actions-text-input {
+    text-align: right;
+}
+
+.botui-actions-text-input, .botui-message-content, .botui-message-content text, .botui-actions-buttons, .botui-actions-buttons-button, .botui-message-content.human {
+    font-family: Heebo;
+    color: #333333 !important;
+}
+
+.hidden-elements {
+    display: none;
+}
+
+/*html {
+    scroll-behavior: smooth;
+}*/

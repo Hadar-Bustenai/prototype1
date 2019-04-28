@@ -1,0 +1,207 @@
+﻿/****************דף הבית****************/
+
+/*קאבר חלק עליון*/
+#topSection {
+    background-image: url(/images/shuka_banner.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 8rem;
+    height: 37rem;
+}
+
+#demo {
+    padding-top: 6rem;
+}
+
+/*תפריט עליון קבוע*/
+/*header {
+    font-family: Heebo;
+    width: 100%;
+    height: 80px;
+    line-height: 1.5rem;
+    display: flex;
+    text-align: center;
+    direction: rtl;
+}*/
+
+/*קרוסלה מתחלפת*/
+.carousel-indicators li {
+    background-color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+.carousel-indicators .active {
+    background-color: #004D82;
+    border: 0.4px solid white;
+}
+
+.carousel-indicators li:hover {
+    cursor: pointer;
+    background-color: #004D82;
+    border: 0.4px solid white;
+}
+
+.carousel-item {
+    text-align: right;
+    padding-right: 1rem;
+    color: white;
+    margin-top: 2rem;
+    direction: rtl;
+}
+
+    .carousel-item p:first-child {
+        font-size: 280%;
+        word-spacing: 3px;
+        line-height: 150%;
+        font-weight: 200;
+    }
+
+    .carousel-item p:nth-child(2) {
+        font-size: 100%;
+    }
+
+/*כפתור CTA*/
+.btn-outline-dark {
+    width: 11rem;
+    background-color: #ABC933;
+    border-color: #ABC933;
+    border-radius: 7px;
+    margin-top: 2.5rem;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background-color: transparent;
+        border-color: #ABC933;
+    }
+
+.carousel-item a:last-child {
+    display: inline-block;
+    margin-right: 32%;
+    margin-top: 1rem;
+    position: absolute;
+    color: white;
+    font-size: 300%;
+    -webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+
+    .carousel-item a:last-child:hover {
+        color: #ABC933;
+    }
+
+.carousel-inner {
+    height: 30rem;
+}
+
+/*פופ אפ סרטון*/
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.modal-header {
+    border: none !important;
+}
+
+.close {
+    color: white !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    font-size: 200% !important;
+}
+
+    .close:focus, .close:hover {
+        color: #ABC933 !important;
+        -webkit-transition: all 0.2s; /* Safari */
+        transition: all 0.2s;
+    }
+
+.modal-dialog {
+    max-width: 760px !important;
+    margin: 0 auto !important;
+}
+
+/*קרוסלה דמויות*/
+.container{
+    max-width: 90%;
+}
+
+.slick-slider {
+    margin-bottom: 8rem;
+    text-align: center !important;
+    touch-action: pan-x !important;
+}
+
+.imgTheam {
+    border: 1px solid #ABC933;
+    border-radius: 50%;
+    width: 75%;
+    stroke: none;
+    margin-left: 2rem;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+    .imgTheam:hover {
+        opacity: 0.7;
+    }
+
+.slick-active {
+    outline: none;
+}
+
+.carouselSlick div p {
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+/*נושאי שיחה*/
+#subjectTableDiv {
+    margin-bottom: 3rem;
+}
+
+.tableClass{
+    direction: rtl;
+}
+
+.subject-box {
+    width: 33%;
+    height: auto;
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 5rem;
+}
+
+.fa-comments {
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+.tableClass .subject-box a:first-of-type {
+    text-decoration: none;
+    color: #333333 !important;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.tableClass .subject-box a:last-of-type {
+    text-decoration: none;
+    color: #ABC933;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s; /* Safari */
+    transition: border-bottom 0.2s;
+}
+
+    .tableClass .subject-box a:last-of-type:hover {
+        border-bottom: 1px solid #ABC933;
+    }

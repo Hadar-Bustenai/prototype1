@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="he-li" >
+<head>
+    <meta charset="utf-8" />
+    <title>GenChat - צ'אט עם שוקה</title>
+    <meta name="description" content="מעוניינים לשוחח עם שוקה? היכנסו עכשיו לצאט ודברו איתו בלייב" />
+    <meta name="keywords" content="צאט, שיחה, שיחה עם שוקה לדבר עם שוקה, שיחת צאט עם שוקה" />
+    <meta name="author" content="Yuval Yanko, Hadar Bustenai" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/botui/build/botui.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/botui/build/botui-theme-default.css" rel="stylesheet" />
+    <link href="Styles/site.css" rel="stylesheet" />
+    <link href="Styles/chatPage.css" rel="stylesheet" />
+
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script src="jScripts/site.js"></script>
+    <script src="jScripts/chatPage.js"></script>
+
+
+</head>
+<body id="chatPage">
+    <header>
+        <!--<h1 id="myLogo"></h1>-->
+        <!-- תפריט עליון קבוע -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="secNavBar">
+            <a class="navbar-brand" href="index.html">genChat<span class="sr-only">(current)</span></a>
+        </nav>
+    </header>
+    <!-- הגדרת רספונסיביות -->
+    <div id="container" class="container-fluid">
+        <div class="row sticky-top top-page">
+            <div class="col-md-3 chats-list-bar-header-col">
+                <div class="chats-list-bar-header d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                            <a href="index.html">
+                                <img class="img-fluid chat-list-bar-back-img" src="images/arrow-circle-right-solid.svg" />
+                            </a>
+                        </div>
+                        <div class="col-md-10 justify-content-center">
+                            <h2>צ'אטים פעילים</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="media chat-head">
+                    <img src="images/shuka.jpg" class="mr-3 chat-list-container-bot-img" alt="שוקה">
+                    <div class="media-body">
+                        <h3 class="mt-0 text-right">שוקה</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 chats-list-bar d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-12 chats-list-bar-body">
+                            <div class="list-group chats-list-container">
+                                <a href="#" class="list-group-item list-group-item-action item-active">
+                                    <div class="media">
+                                        <img src="images/shuka.jpg" class="mr-0 chat-list-container-bot-img" alt="שוקה">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">שוקה</h3>
+                                            <p class="active-chat">עכשיו מדברים >></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action noEnter">
+                                    <div class="media">
+                                        <img src="images/easy.jpg" class="mr-0 chat-list-container-bot-img" alt="איזי">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">איזי</h3>
+                                            <p>היי, אני הולך לחוף הים לאימון קצר וכבר מגיע, מה איתך?</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action noEnter">
+                                    <div class="media">
+                                        <img src="images/batya.jpg" class="mr-0 chat-list-container-bot-img" alt="בתיה">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">בתיה</h3>
+                                            <p>עכשיו חזרתי מאימון ריקודי הבטן שלי, היה מעולה!</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action noEnter">
+                                    <div class="media">
+                                        <img src="images/kassem.jpg" class="mr-0 chat-list-container-bot-img" alt="קאסם">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">קאסם</h3>
+                                            <p>בדיוק קניתי קפה שחור לכל החברים בדיוואן. רוצה להצטרף?</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action noEnter">
+                                    <div class="media">
+                                        <img src="images/sarah.jpg" class="mr-0 chat-list-container-bot-img" alt="שרה">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">שרה</h3>
+                                            <p>הנכדים הגיעו לביקור כמו כל בוקר לשוקו וכריך. מה שלומך?</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action noEnter">
+                                    <div class="media">
+                                        <img src="images/prima.jpg" class="mr-0 chat-list-container-bot-img" alt="פרימה">
+                                        <div class="media-body">
+                                            <h3 class="mt-0 text-right">פרימה</h3>
+                                            <p>זה עתה חוזרת ממועדון הקשישים, היה מאוד מרגש. מה שלומך?</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="col-md-9 chat-window">
+                <div class="container" id="my-botui-app">
+                    <!-- Image and text -->
+                    <bot-ui></bot-ui>
+                </div>
+            </div>
+        </div>
+        <!--<div id="headChat">
+            <a href="/homePage.html"><img src="images/right-arrow.png" width="50"/></a>
+            <div class="detailsContact"><img src="images/shuka.jpg" id="contactImg" class="img-responsive" alt="שוקה"/></div>
+            <h2>שיחה עם שוקה</h2>
+        </div>
+        <div class="container" id="my-botui-app">-->
+            <!-- Image and text -->   
+            <!--<bot-ui></bot-ui>
+        </div>-->
+    </div>
+</body>
+</html>
