@@ -5,7 +5,7 @@
 
     $("#carousel1").click(function () {
         console.log("carousel-back-1");
-        $("#topSection").css({ "background-image": "url(/images/shuka_banner.png", "background-color": "rgba(0,0,0,0.5)" });
+        $("#topSection").css("background-image", "url(/images/shuka_banner.png");
     })
 
     $("#carousel2").click(function () {
