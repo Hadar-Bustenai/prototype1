@@ -5,17 +5,17 @@
 
     $("#carousel1").click(function () {
         console.log("carousel-back-1");
-        $("#topSection").css("background-image", "url(/images/shuka_banner.png");
+        $("#topSection").css("background-image", "url(images/shuka_banner.png");
     })
 
     $("#carousel2").click(function () {
         console.log("carousel-back-2");
-        $("#topSection").css("background-image", "url(/images/batya_banner.png");
+        $("#topSection").css("background-image", "url(images/batya_banner.png");
     })
 
     $("#carousel3").click(function () {
         console.log("carousel-back-3");
-        $("#topSection").css("background-image", "url(/images/eazy_banner.png");
+        $("#topSection").css("background-image", "url(images/eazy_banner.png");
     })
 
     $(".play-video").click(function (e) {
